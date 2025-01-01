@@ -1,15 +1,13 @@
+
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Lexend } from "next/font/google";
+import "@/style/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { ChartProvider } from "@/providers/ChartProvider";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lexend = Lexend({
   subsets: ["latin"],
+  variable: "--font-lexend",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${lexend.className} antialiased trancy-zh-CN`}>
+        <ChartProvider>
+          {children}
+        </ChartProvider>
       </body>
     </html>
   );

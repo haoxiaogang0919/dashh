@@ -1,0 +1,17 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true,
+        "tabWidth": 2,
+        "printWidth": 80,
+        "trailingComma": "es5",
+        "singleAttributePerLine": true
+      }
+    ]
+  }
+}

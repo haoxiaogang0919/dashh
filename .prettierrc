@@ -1,0 +1,15 @@
+{
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "printWidth": 80,
+  "trailingComma": "es5",
+  "singleAttributePerLine": true,
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-classnames",
+    "prettier-plugin-merge"
+  ],
+  "tailwindConfig": "./tailwind.config.ts",
+  "tailwindFunctions": ["cn", "clsx", "twMerge"]
+}
